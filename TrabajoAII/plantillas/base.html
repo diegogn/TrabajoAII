@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+  <meta charset='utf-8'>
+  <title>Practica10 - {% block titulo %}{% endblock %}</title>
+  {% block style_css %}{% endblock %}
+</head>
+<body>
+  <header>
+	{% block encabezado %}{% endblock %}
+	<nav>
+	  <ul id='menu'>
+		  <li><a href='/'>Inicio</a></li>
+		  <li><a href='/lista_productos/'>Productos</a></li>
+		  <li><a href='/lista_usuarios/'>Usuarios</a></li>
+    </ul>
+	</nav>
+	<hr>
+  </header>	
+  <section class='contenido'>
+	{% block contenido %}{% endblock %}
+  </section>
+  <footer>
+	<p>Bienvenido a Practica10</p>
+  </footer>
+</body>
+</html>
